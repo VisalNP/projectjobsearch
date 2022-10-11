@@ -1,0 +1,256 @@
+body {
+    background-color: #180000;
+    font-family: 'Helvetica', serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  .card {
+    background-color: rgba(23, 23, 23, 0.253);
+    color: #fff;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 25px 25px 15px 25px;
+    transition: 0.3s;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+.signup {
+  border-radius: 10px  0px 10px 0px;
+  border-style: dotted;
+  border-color: #FC466B;
+}
+.card:hover {
+  background-color: rgba(7, 7, 7, 0.578);
+  border-color: #379eff;
+  border-style: double;
+  scale: 1.02;
+  
+}
+
+.title {
+  color: rgb(0, 45, 94);
+  text-align: center;
+  font-weight: bolder;
+  background-image: linear-gradient(60deg, #77b2ff, #fdfcff);
+  -webkit-background-clip: text;
+  font-size: 400%;
+  
+}
+
+  h1 span {
+    color: rgb(184, 124, 239);
+    text-align: center;
+    font-weight: normal;
+    font-size: 50%;
+  }
+
+  h2 span {
+    color: #379eff;
+    font-weight: bold;
+  }
+
+  .pagename {
+    color: rgb(0, 45, 94);
+    padding-left: 1%;
+    text-align: center;
+
+  }
+  
+  h4 {
+    color:#FC466B;
+    font-weight: bolder;
+    font-size: 130%;
+    margin-bottom: -1%;
+    margin-top: 0%;
+  }
+
+.companyname {
+  color: #379eff;
+  font-weight: bold;
+  font-size: 100%;
+  margin-bottom: -1%;
+}
+
+.location {
+  font-weight: bold;
+}
+
+
+
+
+header{
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ol{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  list-style: none;
+}
+header ol a,header a{
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+header ol a li{
+  font-size:17px;
+  padding: 10px 20px;
+  border-radius: 10px  0px 10px 0px;
+   margin: 0 5px;
+  transition:  .3s all ease-in;
+}
+header ol a li:hover{
+  background-color: #FC466B;
+  color: black;
+}
+.checkBtn{
+  display: none;
+}
+      @media only screen and (max-width: 665px) {
+  .checkBtn{
+    display: block;
+   width: 25px;
+   height: 25px;
+   cursor: pointer;
+   position: relative;
+   appearance: none;
+   -webkit-appearance:  none;
+}
+.checkBtn::before{
+content: '\f0c9';
+font-family: 'Helvetica';
+font-weight: 700;
+font-size: 1.5em;
+color: white;
+}
+.checkBtn:checked::before{
+  content: '\f00d';
+}
+
+  header ol{
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  z-index: 100;
+  padding: 1.2em;
+  background-color: black;
+  flex-direction: column;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: .4s clip-path;
+}
+.checkBtn:checked ~ ol{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+header ol a li{
+  margin: 5px 0;
+}
+header ol::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  height: 5px;
+  background-color: grey;
+  top: 98%;
+  left: 0;
+}}
+
+.applybutton {
+  background-color: #FC466B;; 
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  float: right;
+  padding: 10px 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-weight: bolder;
+  color: #030303;
+
+}
+.applybutton:hover {
+  background-color: #379eff;
+  transition:  .2s all ease-in;
+  border-radius: 10px  0px 10px 0px;
+  scale: 1.05;
+  color: #fff;
+  cursor: pointer;
+}
+.title2 {
+  font-weight: 300;
+  line-height:1.3;
+  text-align: center;
+  letter-spacing: -1px;
+  font-weight: bolder;
+  font-size: 400%;
+  margin-bottom: 1%;
+  color: #FC466B;
+  font-family: 'Zilla Slab Highlight', cursive;
+
+}
+.title3 {
+  font-size: 150%;
+  text-transform: capitalize;
+  background-size: auto;
+  border-radius: 30px;
+  font-weight: 200;
+  color: #e9e9e9;
+  padding-left: 5px;
+  text-align: center;
+  margin-top: -1%;
+  font-family: 'Helvetica', serif;
+}
+
+.divtitle {
+  margin-bottom: 5%;
+}
+
+.test1 {
+  text-align: center;
+}
+
+.truncated > * {
+  display: none;
+}
+.truncated > p:first-child {
+  display: block;
+  cursor: pointer;
+}
+.truncated > p:first-child::after {
+  content: "\00a0 Learn More…";
+  color: #FC466B;
+}
+
+h1 {
+  font-size: 150%;
+  color: #379eff;
+  margin-bottom: 0%;
+}
+h2 {
+  margin-top: 1%;
+  margin-bottom: 0%;
+  font-size: 125%;
+  color: #FC466B;
+}
+h3 {
+  margin-top: 1%;
+  font-size: 100%;
+}
+
+p {
+  max-width:1000px;
+  word-wrap:break-word
+}
